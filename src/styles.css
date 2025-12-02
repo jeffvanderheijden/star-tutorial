@@ -143,3 +143,67 @@ html,
     height: 100% !important;
     display: block;
 }
+
+
+/* ============================================================
+   RESPONSIVE LAYOUT — CANVAS BOVEN, UI ONDER, PAGINA SCROLLBAAR
+   ============================================================ */
+
+@media (max-width: 900px) {
+
+    /* Grid → verticale stacking */
+    .workshop-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        max-height: none;
+        overflow: visible;
+    }
+
+    /* Canvas-paneel bovenaan */
+    .workshop-panel--right {
+        order: 0;
+        width: 100%;
+        height: 50vh;
+        /* canvas hoogte op mobiel/tablet */
+        max-height: 60vh;
+    }
+
+    .workshop-panel--right canvas {
+        height: 100% !important;
+    }
+
+    /* UI-paneel onder canvas */
+    .workshop-panel--left {
+        order: 1;
+        width: 100%;
+        border-right: none;
+        border-top: 1px solid #1f2937;
+        max-height: none;
+    }
+}
+
+/* Extra fijn afgesteld voor kleine telefoons */
+@media (max-width: 600px) {
+    .workshop-panel--right {
+        height: 45vh;
+    }
+
+    .workshop-panel--left {
+        padding: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .workshop-controls {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .workshop-header h1 {
+        font-size: 1.3rem;
+    }
+}
