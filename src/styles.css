@@ -1,0 +1,145 @@
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    color-scheme: light dark;
+    background-color: #111827;
+    color: #f9fafb;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+html,
+#root {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.app-root {
+    height: 100%;
+}
+
+.workshop-container {
+    display: grid;
+    grid-template-columns: minmax(500px, 420px) 1fr;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.workshop-panel {
+    padding: 1.5rem;
+}
+
+.workshop-panel--left {
+    background: radial-gradient(circle at top left, #1f2937 0, #020617 60%);
+    border-right: 1px solid #1f2937;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.workshop-panel--right {
+    background: #020617;
+}
+
+.workshop-header h1 {
+    font-size: 1.6rem;
+    margin: 0 0 0.25rem;
+}
+
+.workshop-subtitle {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #9ca3af;
+}
+
+.workshop-step-info {
+    background: rgba(15, 23, 42, 0.8);
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid #1f2937;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.step-indicator {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 0.9rem;
+    color: #9ca3af;
+}
+
+.step-indicator strong {
+    font-size: 1.1rem;
+    color: #e5e7eb;
+}
+
+.step-text p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.workshop-controls {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    border: 1px solid #374151;
+    background: #111827;
+    color: #e5e7eb;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.9rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 120ms ease, border-color 120ms ease, transform 80ms ease;
+}
+
+.btn:hover:not(:disabled) {
+    background: #1f2937;
+    border-color: #4b5563;
+    transform: translateY(-1px);
+}
+
+.btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+
+.btn--primary {
+    background: #2563eb;
+    border-color: #1d4ed8;
+    color: #f9fafb;
+}
+
+.btn--primary:hover:not(:disabled) {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+.btn--ghost {
+    background: transparent;
+    border-style: dashed;
+}
+
+.workshop-footer {
+    margin-top: auto;
+    font-size: 0.8rem;
+    color: #9ca3af;
+}
+
+/* Canvas full height */
+.workshop-panel--right canvas {
+    width: 100% !important;
+    height: 100% !important;
+    display: block;
+}
