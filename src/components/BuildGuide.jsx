@@ -8,7 +8,7 @@ import ConfettiTrigger from "./ConfettiTrigger.jsx";
 const STEP_TEXT = [
     "Check eerst of je alle planken hebt. We hebben er 10 nodig. 5 lange en 5 korte. (5 keer geel en 5 keer rood zoals op het voorbeeld hiernaast.)",
     "We beginnen met het maken van een V-vorm. Zorg dat je een korte en een lange plank gebruikt. Let goed op hoe de planken aan elkaar bevestigd worden in het voorbeeld hiernaast!",
-    "We gaan deze nu aan elkaar lijmen. Zorg dat je lijm gebruikt die geschikt is voor hout. Een stuk tape helpt om de planken bij elkaar te houden tijdens dit proces.",
+    "We gaan deze nu aan elkaar lijmen. Zorg dat je lijm gebruikt die geschikt is voor hout en gebruik niet teveel lijm! Een stuk tape helpt om de planken bij elkaar te houden tijdens dit proces.",
     "Doe dit tot we vijf V-vormen hebben. Deze vormen de punten van onze ster. Wanneer de V vormen droog zijn, gaan we verder en lijmen we ze éen voor één aan elkaar. (Gebruik ook hier weer tape om ze op hun plek te houden tijdens het drogen.)",
     "Gefeliciteerd! Je hebt een super coole houten ster gebouwd. Nu kun je hem nog verven of beitsen om hem helemaal af te maken."
 ];
